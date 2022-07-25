@@ -87,7 +87,7 @@ router.delete('/:id', (req, res) => {
   })
   .then(dbPostData => {
     if(!dbPostData) {
-      res.status(404).json({message: 'No caetegory with this id!'}); 
+      res.status(404).json({message: 'No category with this id!'}); 
       return; 
     }
     res.json(dbPostData);
